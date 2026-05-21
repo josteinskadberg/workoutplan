@@ -5,6 +5,7 @@ export type ExerciseDef = {
   bodyweightSwap?: string;
   isMain?: boolean;
   defaultSets: number;
+  videoUrl?: string;
 };
 
 export type DayDef = {
@@ -77,6 +78,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Bulgarian split squat",
         isMain: true,
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=RpBf5ZRdvWE&t=157s",
       },
       {
         id: "atg-split-squat",
@@ -84,6 +86,7 @@ export const DAYS: DayDef[] = [
         target: "3×8 each leg",
         bodyweightSwap: "Bodyweight, slow tempo",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=4qPJUSczLcM",
       },
       {
         id: "leg-extension",
@@ -91,6 +94,7 @@ export const DAYS: DayDef[] = [
         target: "3×12",
         bodyweightSwap: "Sissy squat (assisted)",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/iQ92TuvBqRo",
       },
       {
         id: "standing-calf-raise",
@@ -98,12 +102,14 @@ export const DAYS: DayDef[] = [
         target: "3×15",
         bodyweightSwap: "Single-leg off step",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/baEXLy09Ncc",
       },
       {
         id: "dead-bug",
         name: "Dead bug",
         target: "3×10 each side",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/1g7k3vPYkQA",
       },
       {
         id: "single-leg-stance-d1",
@@ -125,6 +131,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Single-leg RDL, slow",
         isMain: true,
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/5rIqP63yWFg",
       },
       {
         id: "hip-thrust",
@@ -132,6 +139,7 @@ export const DAYS: DayDef[] = [
         target: "3×10",
         bodyweightSwap: "Single-leg glute bridge",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=pF17m_CXfL0",
       },
       {
         id: "walking-lunge",
@@ -139,13 +147,7 @@ export const DAYS: DayDef[] = [
         target: "3×10 each leg",
         bodyweightSwap: "Bodyweight, deeper",
         defaultSets: 3,
-      },
-      {
-        id: "seated-calf-raise",
-        name: "Seated calf raise",
-        target: "3×15",
-        bodyweightSwap: "Single-leg bent-knee",
-        defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=tQNktxPkSeE",
       },
       {
         id: "tibialis-raise-d2",
@@ -153,6 +155,7 @@ export const DAYS: DayDef[] = [
         target: "3×15",
         bodyweightSwap: "Heel walks 30 sec",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/pQcvW08rnAk",
       },
       {
         id: "pallof-press",
@@ -160,6 +163,7 @@ export const DAYS: DayDef[] = [
         target: "3×10 each side",
         bodyweightSwap: "Band on door",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=ma2OjgP5XDc",
       },
     ],
   },
@@ -174,6 +178,7 @@ export const DAYS: DayDef[] = [
         target: "3×6 each side",
         bodyweightSwap: "Bodyweight",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/MJvazUpmdZU",
       },
       {
         id: "step-up",
@@ -181,6 +186,7 @@ export const DAYS: DayDef[] = [
         target: "3×8 each leg",
         bodyweightSwap: "Bodyweight, slow",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/K3plWYWTFVw",
       },
       {
         id: "single-leg-rdl",
@@ -188,6 +194,7 @@ export const DAYS: DayDef[] = [
         target: "3×8 each leg",
         bodyweightSwap: "Bodyweight, arms out",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/R_fJ6H3FlVw",
       },
       {
         id: "peterson-step-up",
@@ -195,6 +202,7 @@ export const DAYS: DayDef[] = [
         target: "3×10 each leg",
         bodyweightSwap: "Bodyweight",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=yuvRE6PsvJw",
       },
       {
         id: "copenhagen-plank",
@@ -202,6 +210,7 @@ export const DAYS: DayDef[] = [
         target: "3×20 sec each side",
         bodyweightSwap: "Knee on chair",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=aDsaGBnvDQo",
       },
       {
         id: "kb-windmill",
@@ -209,12 +218,14 @@ export const DAYS: DayDef[] = [
         target: "3×5 each side",
         bodyweightSwap: "Bodyweight focus form",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=4dTvEXgzWqM",
       },
       {
         id: "mobility-flow",
         name: "Mobility flow (10 min)",
         target: "90/90 · couch · CARs",
         defaultSets: 1,
+        videoUrl: "https://www.youtube.com/watch?v=P4GfbdNvOT8&t=91s",
       },
     ],
   },
@@ -230,6 +241,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Single-leg RDL, paused",
         isMain: true,
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/v-SrIcAp3vM",
       },
       {
         id: "nordic-ham-curl",
@@ -237,6 +249,7 @@ export const DAYS: DayDef[] = [
         target: "3×5",
         bodyweightSwap: "Hands assist on way up",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=6NCN6kOagfY",
       },
       {
         id: "reverse-lunge",
@@ -244,6 +257,7 @@ export const DAYS: DayDef[] = [
         target: "3×10 each leg",
         bodyweightSwap: "Bodyweight",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/38xlLGfguz4",
       },
       {
         id: "standing-calf-raise-d4",
@@ -251,6 +265,7 @@ export const DAYS: DayDef[] = [
         target: "4×10",
         bodyweightSwap: "Single-leg slow eccentric",
         defaultSets: 4,
+        videoUrl: "https://www.youtube.com/shorts/baEXLy09Ncc",
       },
       {
         id: "tibialis-raise-d4",
@@ -258,6 +273,7 @@ export const DAYS: DayDef[] = [
         target: "3×15",
         bodyweightSwap: "Heel walks 45 sec",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/pQcvW08rnAk",
       },
       {
         id: "hanging-leg-raise",
@@ -265,6 +281,7 @@ export const DAYS: DayDef[] = [
         target: "3×8",
         bodyweightSwap: "Lying leg raise",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/shorts/2n4UqRIJyk4",
       },
       {
         id: "suitcase-carry",
@@ -272,6 +289,7 @@ export const DAYS: DayDef[] = [
         target: "3×30 sec each side",
         bodyweightSwap: "Backpack weighted",
         defaultSets: 3,
+        videoUrl: "https://www.youtube.com/watch?v=3RKKnZhhelE",
       },
     ],
   },

@@ -219,7 +219,19 @@ function ExerciseCard({
     <li className="rounded-lg border border-border bg-panel p-4 space-y-3">
       <header className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="font-semibold truncate">{ex.name}</p>
+          <div className="flex items-center gap-2">
+            <p className="font-semibold truncate">{ex.name}</p>
+            {ex.videoUrl ? (
+              <a
+                href={ex.videoUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="chip border-accent/60 text-accent whitespace-nowrap hover:bg-accent/10"
+              >
+                ▶ Video
+              </a>
+            ) : null}
+          </div>
           <p className="text-xs text-muted">{mainTarget ?? ex.target}</p>
           {ex.bodyweightSwap ? (
             <p className="text-[11px] text-muted/80 mt-1">
