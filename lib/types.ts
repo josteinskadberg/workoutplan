@@ -2,6 +2,7 @@ export type SetEntry = {
   weight: number | null;
   reps: number | null;
   rpe: number | null;
+  seconds: number | null;
 };
 
 export type ExerciseLog = {

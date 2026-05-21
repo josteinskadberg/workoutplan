@@ -1,3 +1,5 @@
+export type TrackingKind = "weighted" | "reps" | "time";
+
 export type ExerciseDef = {
   id: string;
   name: string;
@@ -6,6 +8,7 @@ export type ExerciseDef = {
   isMain?: boolean;
   defaultSets: number;
   videoUrl?: string;
+  tracking?: TrackingKind;
 };
 
 export type DayDef = {
@@ -110,12 +113,14 @@ export const DAYS: DayDef[] = [
         target: "3×10 each side",
         defaultSets: 3,
         videoUrl: "https://www.youtube.com/shorts/1g7k3vPYkQA",
+        tracking: "reps",
       },
       {
         id: "single-leg-stance-d1",
         name: "Single-leg stance, eyes closed",
         target: "3×30 sec each",
         defaultSets: 3,
+        tracking: "time",
       },
     ],
   },
@@ -211,6 +216,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Knee on chair",
         defaultSets: 3,
         videoUrl: "https://www.youtube.com/watch?v=aDsaGBnvDQo",
+        tracking: "time",
       },
       {
         id: "kb-windmill",
@@ -226,6 +232,7 @@ export const DAYS: DayDef[] = [
         target: "90/90 · couch · CARs",
         defaultSets: 1,
         videoUrl: "https://www.youtube.com/watch?v=P4GfbdNvOT8&t=91s",
+        tracking: "time",
       },
     ],
   },
@@ -250,6 +257,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Hands assist on way up",
         defaultSets: 3,
         videoUrl: "https://www.youtube.com/watch?v=6NCN6kOagfY",
+        tracking: "reps",
       },
       {
         id: "reverse-lunge",
@@ -282,6 +290,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Lying leg raise",
         defaultSets: 3,
         videoUrl: "https://www.youtube.com/shorts/2n4UqRIJyk4",
+        tracking: "reps",
       },
       {
         id: "suitcase-carry",
@@ -290,6 +299,7 @@ export const DAYS: DayDef[] = [
         bodyweightSwap: "Backpack weighted",
         defaultSets: 3,
         videoUrl: "https://www.youtube.com/watch?v=3RKKnZhhelE",
+        tracking: "time",
       },
     ],
   },

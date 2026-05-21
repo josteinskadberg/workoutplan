@@ -251,6 +251,7 @@ function ExerciseCard({
             key={i}
             index={i}
             set={s}
+            tracking={ex.tracking ?? "weighted"}
             onChange={(next) => {
               const copy = sets.slice();
               copy[i] = next;
@@ -299,7 +300,7 @@ function ExerciseCard({
 }
 
 function emptySet(): SetEntry {
-  return { weight: null, reps: null, rpe: null };
+  return { weight: null, reps: null, rpe: null, seconds: null };
 }
 
 function formatTime(iso: string): string {
