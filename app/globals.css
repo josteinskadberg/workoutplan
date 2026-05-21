@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: theme('colors.bg');
+  color: theme('colors.text');
+  min-height: 100%;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select,
+button,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+.numeric-input {
+  @apply w-full bg-panel2 border border-border rounded-md px-3 py-2 text-center text-base tabular-nums focus:outline-none focus:border-accent;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-md px-3 py-2 text-sm font-medium select-none transition-colors;
+}
+
+.btn-primary {
+  @apply btn bg-accent text-bg hover:bg-accentDark;
+}
+
+.btn-ghost {
+  @apply btn bg-panel2 border border-border text-text hover:border-accent;
+}
+
+.btn-danger {
+  @apply btn bg-panel2 border border-border text-danger hover:border-danger;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full bg-panel2 border border-border px-2 py-0.5 text-xs text-muted;
+}
